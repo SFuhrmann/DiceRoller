@@ -4,9 +4,13 @@
     {
         int count = 0;
 
+        DiceRoller Roller;
+
         public MainPage()
         {
             InitializeComponent();
+
+            Roller = new DiceRoller(1, 6);
         }
 
         private void OnCounterClicked(object sender, EventArgs e)
